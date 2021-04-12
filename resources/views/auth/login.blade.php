@@ -14,7 +14,7 @@
                             </div>
                             <div class="col-md-8 pl-md-0">
                                 <div class="auth-form-wrapper px-4 py-5">
-                                    <a href="#" class="noble-ui-logo d-block mb-2">Noble<span>UI</span></a>
+                                    <a href="#" class="noble-ui-logo d-block mb-2">Zeus<span></span></a>
                                     <h5 class="text-muted font-weight-normal mb-4">Welcome back! Log in to your
                                         account.</h5>
                                     <form class="forms-sample" method="POST" action="{{ route('login') }}">

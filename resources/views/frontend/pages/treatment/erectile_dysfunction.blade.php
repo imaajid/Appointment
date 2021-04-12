@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
                 <div class="page-next-level">
-                    <h4 class="title"> Hair Loss </h4>
+                    <h4 class="title"> Erectile dysfunctions</h4>
                     <div class="page-next">
                         <nav aria-label="breadcrumb" class="d-inline-block">
                             <ul class="breadcrumb bg-white rounded shadow mb-0">
@@ -45,14 +45,14 @@
   
                           {{-- video section --}}
                           <section class="section">
-                          <section class="section bg-cta" style="background: url('images/hotel/bg04.jpg') center center;" id="cta">
+                          <section class="section bg-cta" style="background: url('images/hotel/bg04.jpg')}}') center center;" id="cta">
                             <div class="bg-overlay"></div>
                             <div class="container">
                                 <div class="row justify-content-center">
                                     <div class="col-12 text-center">
                                         <div class="section-title">
-                                            <h4 class="title title-dark text-white mb-4">Resembling Tour of Landrick Resort</h4>
-                                            <p class="text-light para-dark para-desc mx-auto">Start working with Landrick that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                                            <h4 class="title title-dark text-white mb-4">Resembling Tour of Appointment Resort</h4>
+                                            <p class="text-light para-dark para-desc mx-auto">Start working with Appointment that can provide everything you need to generate awareness, drive traffic, connect.</p>
                                             <a href="#!" data-type="youtube" data-id="yba7hPeTSjk" class="play-btn border border-light mt-4 lightbox">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play fea icon-ex-md text-white title-dark"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
                                             </a>
@@ -67,7 +67,7 @@
                             <div class="col-lg-4 col-md-6 mt-4 pt-2">
                                 <div class="card blog rounded border-0 shadow">
                                     <div class="position-relative">
-                                        <img src="images/hotel/bg01.jpg" class="card-img-top rounded-top" alt="...">
+                                        <img src="{{('frontend/images/hotel/bg01.jpg')}}" class="card-img-top rounded-top" alt="...">
                                     <div class="overlay rounded-top bg-dark"></div>
                                     </div>
                                     <div class="card-body content">
@@ -90,7 +90,7 @@
                             <div class="col-lg-4 col-md-6 mt-4 pt-2">
                                 <div class="card blog rounded border-0 shadow">
                                     <div class="position-relative">
-                                        <img src="images/hotel/bg02.jpg" class="card-img-top rounded-top" alt="...">
+                                        <img src="{{('frontend/images/hotel/bg02.jpg')}}" class="card-img-top rounded-top" alt="...">
                                     <div class="overlay rounded-top bg-dark"></div>
                                     </div>
                                     <div class="card-body content">
@@ -113,7 +113,7 @@
                             <div class="col-lg-4 col-md-6 mt-4 pt-2">
                                 <div class="card blog rounded border-0 shadow">
                                     <div class="position-relative">
-                                        <img src="images/hotel/bg03.jpg" class="card-img-top rounded-top" alt="...">
+                                        <img src="{{('frontend/images/hotel/bg03.jpg')}}" class="card-img-top rounded-top" alt="...">
                                     <div class="overlay rounded-top bg-dark"></div>
                                     </div>
                                     <div class="card-body content">

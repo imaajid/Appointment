@@ -10,7 +10,7 @@
                     <div class="page-next">
                         <nav aria-label="breadcrumb" class="d-inline-block">
                             <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                <li class="breadcrumb-item"><a href="index.html">Landrick</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Appointment</a></li>
                                 <li class="breadcrumb-item"><a href="helpcenter-overview.html">Help Center</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">FAQs</li>
                             </ul>
@@ -57,7 +57,7 @@
                             <div class="accordion-item rounded mt-2">
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Do I need a designer to use Landrick ?
+                                        Do I need a designer to use Appointment ?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse border-0 collapse" aria-labelledby="headingTwo" data-bs-parent="#buyingquestion">
@@ -115,7 +115,7 @@
                             <div class="accordion-item rounded mt-2">
                                 <h2 class="accordion-header" id="headingsix">
                                     <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                                        Do I need a designer to use Landrick ?
+                                        Do I need a designer to use Appointment ?
                                     </button>
                                 </h2>
                                 <div id="collapsesix" class="accordion-collapse border-0 collapse" aria-labelledby="headingsix" data-bs-parent="#generalquestion">
@@ -173,7 +173,7 @@
                             <div class="accordion-item rounded mt-2">
                                 <h2 class="accordion-header" id="headingten">
                                     <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
-                                        Do I need a designer to use Landrick ?
+                                        Do I need a designer to use Appointment ?
                                     </button>
                                 </h2>
                                 <div id="collapseten" class="accordion-collapse border-0 collapse" aria-labelledby="headingten" data-bs-parent="#paymentquestion">
@@ -231,7 +231,7 @@
                             <div class="accordion-item rounded mt-2">
                                 <h2 class="accordion-header" id="headingfourteen">
                                     <button class="accordion-button border-0 bg-light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefourteen" aria-expanded="false" aria-controls="collapsefourteen">
-                                        Do I need a designer to use Landrick ?
+                                        Do I need a designer to use Appointment ?
                                     </button>
                                 </h2>
                                 <div id="collapsefourteen" class="accordion-collapse border-0 collapse" aria-labelledby="headingfourteen" data-bs-parent="#supportquestion">

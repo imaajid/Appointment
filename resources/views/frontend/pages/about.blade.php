@@ -37,7 +37,7 @@
                 <div class="col-lg-7 col-md-7 mt-4 pt-2 mt-sm-0 pt-sm-0">
                     <div class="section-title ms-lg-4">
                         <h4 class="title mb-4">Our Story</h4>
-                        <p class="text-muted">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy texts have been in use by typesetters since the 16th century.</p>
+                        <p class="text-muted">Start working with <span class="text-primary fw-bold">Appointments</span> that can provide everything you need to generate awareness, drive traffic, connect. Dummy text is text that is used in the publishing industry or by web designers to occupy the space which will later be filled with 'real' content. This is required when, for example, the final text is not yet available. Dummy texts have been in use by typesetters since the 16th century.</p>
                         <a href="javascript:void(0)" class="btn btn-primary mt-3">Buy Now <i class="uil uil-angle-right-b"></i></a>
                     </div>
                 </div><!--end col-->
@@ -49,7 +49,7 @@
                 <div class="col-12 text-center">
                     <div class="section-title mb-4 pb-2">
                         <h4 class="title mb-4">Key Features</h4>
-                        <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Appointment</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
@@ -169,7 +169,7 @@
                 <div class="col-12 text-center">
                     <div class="section-title mb-4 pb-2">
                         <h4 class="title mb-4">Our Greatest Minds</h4>
-                        <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">Appointment</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
@@ -262,7 +262,7 @@
                 <div class="col-12 text-center">
                     <div class="section-title">
                         <h4 class="title mb-4">See everything about your employee at one place.</h4>
-                        <p class="text-muted para-desc mx-auto">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                        <p class="text-muted para-desc mx-auto">Start working with <span class="text-primary fw-bold">Appointment</span> that can provide everything you need to generate awareness, drive traffic, connect.</p>
                     
                         <div class="mt-4">
                             <a href="javascript:void(0)" class="btn btn-primary mt-2 me-2">Get Started Now</a>

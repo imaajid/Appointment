@@ -9,9 +9,9 @@
                     <div class="page-next">
                         <nav aria-label="breadcrumb" class="d-inline-block">
                             <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                <li class="breadcrumb-item"><a href="index.html">Landrick</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Appointments</a></li>
                                 <li class="breadcrumb-item"><a href="#">Company</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">History</li>
+                                <li class="breadcrumb-item active" aria-current="page">Projects</li>
                             </ul>
                         </nav>
                     </div>
@@ -35,7 +35,7 @@
                             </div><!--end col-->
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="card event event-description-right rounded shadow border-0 overflow-hidden float-start">
-                                    <img src="images/blog/01.jpg" class="img-fluid" alt="">
+                                    <img src="{{('frontend/images/blog/01.jpg')}}" class="img-fluid" alt="">
                                     <div class="card-body">
                                         <h5 class="mb-0 text-capitalize">Founding</h5>
                                         <p class="mt-3 mb-0 text-muted">The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
@@ -49,7 +49,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2">
                                 <div class="card event event-description-left rounded shadow border-0 overflow-hidden float-start">
-                                    <img src="images/blog/02.jpg" class="img-fluid" alt="">
+                                    <img src="{{('frontend/images/blog/02.jpg')}}" class="img-fluid" alt="">
                                     <div class="card-body">
                                         <h5 class="mb-0 text-capitalize">Partnership</h5>
                                         <p class="mt-3 mb-0 text-muted">The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
@@ -69,7 +69,7 @@
                             </div><!--end col-->
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="card event event-description-right rounded shadow border-0 overflow-hidden float-start">
-                                    <img src="images/blog/03.jpg" class="img-fluid" alt="">
+                                    <img src="{{('frontend/images/blog/03.jpg')}}" class="img-fluid" alt="">
                                     <div class="card-body">
                                         <h5 class="mb-0 text-capitalize">Secuirty</h5>
                                         <p class="mt-3 mb-0 text-muted">The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
@@ -83,7 +83,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2">
                                 <div class="card event event-description-left rounded shadow border-0 overflow-hidden float-start">
-                                    <img src="images/blog/04.jpg" class="img-fluid" alt="">
+                                    <img src="{{('frontend/images/blog/04.jpg')}}" class="img-fluid" alt="">
                                     <div class="card-body">
                                         <h5 class="mb-0 text-capitalize">Branch</h5>
                                         <p class="mt-3 mb-0 text-muted">The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
@@ -103,7 +103,7 @@
                             </div><!--end col-->
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="card event event-description-right rounded shadow border-0 overflow-hidden float-start">
-                                    <img src="images/blog/05.jpg" class="img-fluid" alt="">
+                                    <img src="{{('frontend/images/blog/05.jpg')}}" class="img-fluid" alt="">
                                     <div class="card-body">
                                         <h5 class="mb-0 text-capitalize">Global</h5>
                                         <p class="mt-3 mb-0 text-muted">The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>
@@ -117,7 +117,7 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2">
                                 <div class="card event event-description-left rounded shadow border-0 overflow-hidden float-start">
-                                    <img src="images/blog/06.jpg" class="img-fluid" alt="">
+                                    <img src="{{('frontend/images/blog/06.jpg')}}" class="img-fluid" alt="">
                                     <div class="card-body">
                                         <h5 class="mb-0 text-capitalize">Branches</h5>
                                         <p class="mt-3 mb-0 text-muted">The generated injected humour, or non-characteristic words etc. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,</p>

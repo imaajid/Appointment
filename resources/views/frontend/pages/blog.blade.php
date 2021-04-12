@@ -9,7 +9,7 @@
                     <div class="page-next">
                         <nav aria-label="breadcrumb" class="d-inline-block">
                             <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                <li class="breadcrumb-item"><a href="index.html">Landrick</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Appointment</a></li>
                                 <li class="breadcrumb-item"><a href="#">Page</a></li>
                                 <li class="breadcrumb-item"><a href="#">Blog</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Blog with Sidebar</li>
@@ -30,7 +30,7 @@
                     <div class="col-lg-6 col-md-12 mb-4 pb-2">
                         <div class="card blog rounded border-0 shadow">
                             <div class="position-relative">
-                                <img src="images/blog/01.jpg" class="card-img-top rounded-top" alt="...">
+                                <img src="{{('frontend/images/blog/01.jpg')}}" class="card-img-top rounded-top" alt="...">
                                 <div class="overlay rounded-top bg-dark"></div>
                             </div>
                             <div class="card-body content">
@@ -53,7 +53,7 @@
                     <div class="col-lg-6 col-md-12 mb-4 pb-2">
                         <div class="card blog rounded border-0 shadow">
                             <div class="position-relative">
-                                <img src="images/blog/02.jpg" class="card-img-top rounded-top" alt="...">
+                                <img src="{{('frontend/images/blog/02.jpg')}}" class="card-img-top rounded-top" alt="...">
                                 <div class="overlay rounded-top bg-dark"></div>
                             </div>
                             <div class="card-body content">
@@ -76,7 +76,7 @@
                     <div class="col-lg-6 col-md-12 mb-4 pb-2">
                         <div class="card blog rounded border-0 shadow">
                             <div class="position-relative">
-                                <img src="images/blog/03.jpg" class="card-img-top rounded-top" alt="...">
+                                <img src="{{('frontend/images/blog/03.jpg')}}" class="card-img-top rounded-top" alt="...">
                                 <div class="overlay rounded-top bg-dark"></div>
                             </div>
                             <div class="card-body content">
@@ -99,7 +99,7 @@
                     <div class="col-lg-6 col-md-12 mb-4 pb-2">
                         <div class="card blog rounded border-0 shadow">
                             <div class="position-relative">
-                                <img src="images/blog/04.jpg" class="card-img-top rounded-top" alt="...">
+                                <img src="{{('frontend/images/blog/04.jpg')}}" class="card-img-top rounded-top" alt="...">
                                 <div class="overlay rounded-top bg-dark"></div>
                             </div>
                             <div class="card-body content">
@@ -122,7 +122,7 @@
                     <div class="col-lg-6 col-md-12 mb-4 pb-2">
                         <div class="card blog rounded border-0 shadow">
                             <div class="position-relative">
-                                <img src="images/blog/05.jpg" class="card-img-top rounded-top" alt="...">
+                                <img src="{{('frontend/images/blog/05.jpg')}}" class="card-img-top rounded-top" alt="...">
                                 <div class="overlay rounded-top bg-dark"></div>
                             </div>
                             <div class="card-body content">
@@ -145,7 +145,7 @@
                     <div class="col-lg-6 col-md-12 mb-4 pb-2">
                         <div class="card blog rounded border-0 shadow">
                             <div class="position-relative">
-                                <img src="images/blog/06.jpg" class="card-img-top rounded-top" alt="...">
+                                <img src="{{('frontend/images/blog/06.jpg')}}" class="card-img-top rounded-top" alt="...">
                                 <div class="overlay rounded-top bg-dark"></div>
                             </div>
                             <div class="card-body content">
@@ -213,15 +213,15 @@
                             <h5 class="widget-title">Recent Post</h5>
                             <div class="mt-4">
                                 <div class="clearfix post-recent">
-                                    <div class="post-recent-thumb float-start"> <a href="jvascript:void(0)"> <img alt="img" src="images/blog/07.jpg" class="img-fluid rounded"></a></div>
+                                    <div class="post-recent-thumb float-start"> <a href="jvascript:void(0)"> <img alt="img" src="{{('frontend/images/blog/07.jpg')}}" class="img-fluid rounded"></a></div>
                                     <div class="post-recent-content float-start"><a href="jvascript:void(0)">Consultant Business</a><span class="text-muted mt-2">15th June, 2019</span></div>
                                 </div>
                                 <div class="clearfix post-recent">
-                                    <div class="post-recent-thumb float-start"> <a href="jvascript:void(0)"> <img alt="img" src="images/blog/08.jpg" class="img-fluid rounded"></a></div>
+                                    <div class="post-recent-thumb float-start"> <a href="jvascript:void(0)"> <img alt="img" src="{{('frontend/images/blog/08.jpg')}}" class="img-fluid rounded"></a></div>
                                     <div class="post-recent-content float-start"><a href="jvascript:void(0)">Look On The Glorious Balance</a> <span class="text-muted mt-2">15th June, 2019</span></div>
                                 </div>
                                 <div class="clearfix post-recent">
-                                    <div class="post-recent-thumb float-start"> <a href="jvascript:void(0)"> <img alt="img" src="images/blog/01.jpg" class="img-fluid rounded"></a></div>
+                                    <div class="post-recent-thumb float-start"> <a href="jvascript:void(0)"> <img alt="img" src="{{('frontend/images/blog/01.jpg')}}" class="img-fluid rounded"></a></div>
                                     <div class="post-recent-content float-start"><a href="jvascript:void(0)">Research Financial.</a> <span class="text-muted mt-2">15th June, 2019</span></div>
                                 </div>
                             </div>

@@ -6,7 +6,7 @@
           
         </a>
         <div class="buy-button">
-            <a href="{{asset('login_modal')}}" target="_blank" class="btn btn-primary">Login</a>
+            <a href="{{asset('login')}}" target="_blank" class="btn btn-primary">Login</a>
         </div><!--end login button-->
         <!-- End Logo container-->
         <div class="menu-extras">
@@ -55,7 +55,7 @@
                 </li>
             </ul><!--end navigation menu-->
             <div class="buy-menu-btn d-none">
-                <a href="https://1.envato.market/4n73n" target="_blank" class="btn btn-primary">Buy Now</a>
+                <a href="{{asset('login')}}" target="_blank" class="btn btn-primary">Login</a>
             </div><!--end login button-->
         </div><!--end navigation-->
     </div><!--end container-->
