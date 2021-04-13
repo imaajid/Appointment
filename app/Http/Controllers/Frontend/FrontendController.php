@@ -34,6 +34,12 @@ class FrontendController extends Controller
     public function login_modal(){
         return view('frontend.pages.login');
     }
+    public function products(){
+        return view('frontend.pages.products.product');
+    }
+    public function product_detail(){
+        return view('frontend.pages.products.product_detail');
+    }
 
 
 }

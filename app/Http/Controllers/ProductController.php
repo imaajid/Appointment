@@ -64,7 +64,8 @@ class ProductController extends Controller
 
         $name = time() . $file->getClientOriginalName();
         $file->move('public\products', $name);
-        $input['image'] = $name;
+        $file_name = 'image_' . time() . '.png';
+        $input['image'] = $file_name;
     }
     //    if ($file = $request->file('image')) {
             

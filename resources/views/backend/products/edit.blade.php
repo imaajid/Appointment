@@ -6,8 +6,8 @@
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('services.index') }}">Permissions</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Edit Permission</li>
+                <li class="breadcrumb-item"><a href="{{ route('products.index') }}">products</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Edit products</li>
             </ol>
         </nav>
     </div>
@@ -16,14 +16,14 @@
         <div class="col-md-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h6 class="card-title">Permission Form</h6>
-                    <form class="forms-sample" method="POST" action="{{ route('services.update', $products->id) }}" enctype="multipart/form-data">
+                    <h6 class="card-title">Product Form</h6>
+                    <form class="forms-sample" method="POST" action="{{ route('products.update', $products->id) }}" enctype="multipart/form-data">
                         @method('PATCH')
                         @csrf
                        
                         <div class="form-group">
                             <label for="category_name">title</label>
-                            <input type="text" class="form-control" id="name" autocomplete="off" placeholder="Service Name" name="title" value="{{ $products->title }}">
+                            <input type="text" class="form-control" id="name" autocomplete="off" placeholder="Name" name="title" value="{{ $products->title }}">
                         </div>
                         <div class="form-group">
                             <label for="charges">name</label>
@@ -54,7 +54,7 @@
                        
                        
                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
-                        <a href="{{ route('services.index') }}" class="btn btn-light">Cancel</a>
+                        <a href="{{ route('products.index') }}" class="btn btn-light">Cancel</a>
                     </form>
                 </div>
             </div>

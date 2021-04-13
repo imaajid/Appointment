@@ -17,31 +17,31 @@
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">products Form</h6>
-                <form class="forms-sample" method="POST" action="{{ route('products.store') }}">
+                <form class="forms-sample" method="POST" action="{{ route('products.store') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="category_name">title</label>
-                        <input type="text" class="form-control" id="name" autocomplete="off" placeholder="Service Name" name="title">
+                        <label for="title">title</label>
+                        <input type="text" class="form-control" id="title" autocomplete="off" name="title">
                     </div>
                     <div class="form-group">
                         <label for="charges">name</label>
-                        <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="name">
+                        <input type="number" class="form-control" id="name" autocomplete="off"  name="name">
                     </div>
                     <div class="form-group">
-                        <label for="charges">price</label>
-                        <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="price">
+                        <label for="price">price</label>
+                        <input type="number" class="form-control" id="price" autocomplete="off" name="price">
                     </div>
                     <div class="form-group">
-                        <label for="charges">quantity</label>
-                        <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="quantity">
+                        <label for="quantity">quantity</label>
+                        <input type="number" class="form-control" id="quantity" autocomplete="off"  name="quantity">
                     </div>
                     <div class="form-group">
-                        <label for="charges">unit</label>
-                        <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="unit">
+                        <label for="unit">unit</label>
+                        <input type="number" class="form-control" id="unit" autocomplete="off"  name="unit">
                     </div>
                     <div class="form-group">
-                        <label for="charges">image</label>
-                        <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="image">
+                        <label for="image">image</label>
+                        <input type="file" class="form-control" id="image" autocomplete="off"  name="image">
                     </div>
                     
                 
