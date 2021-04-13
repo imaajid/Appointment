@@ -17,7 +17,7 @@
             <div class="card">
                 <div class="card-body">
                     <h6 class="card-title">Permission Form</h6>
-                    <form class="forms-sample" method="POST" action="{{ route('services.update', $services->id) }}">
+                    <form class="forms-sample" method="POST" action="{{ route('services.update', $services->id) }}" enctype="multipart/form-data">
                         @method('PATCH')
                         @csrf
                        

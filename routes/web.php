@@ -43,6 +43,6 @@ Route::prefix('admin')->group(function () {
         Route::resource('services', 'Admin\ServiceController');
         Route::resource('specializations', 'Admin\SpecializationController');
         Route::resource('doctor_details', 'Admin\DoctorDetailController');
-        
+        Route::resource('products', 'ProductController');
     });
 });

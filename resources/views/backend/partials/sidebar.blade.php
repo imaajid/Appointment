@@ -74,6 +74,12 @@
                     <span class="link-title">Users</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ url('/admin/products') }}" class="nav-link">
+                    <i class="link-icon" data-feather="users"></i>
+                    <span class="link-title">Products</span>
+                </a>
+            </li>
         </ul>
     </div>
 </nav>

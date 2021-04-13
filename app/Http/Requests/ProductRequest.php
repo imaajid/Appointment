@@ -26,13 +26,11 @@ class ProductRequest extends FormRequest
         return [
             'image' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'title'=> 'required|max:30',
-            'description'=> 'nullable|max:50',
+           
             'price'=> 'required|regex:/^\d+(\.\d{1,2})?$/',
-            'discount'=> 'required|regex:/^\d+(\.\d{1,2})?$/',
-            'category_id'=> 'required',
-            'item_id'=> 'required',
-            'brand_id'=> 'required',
-            'product_type_id'=> 'required',
+             'name' => 'required',
+             'quantity' => 'required',
+             'unit' => 'required',
         ];
     }
 }
