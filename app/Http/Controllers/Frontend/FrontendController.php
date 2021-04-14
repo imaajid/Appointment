@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Frontend;
 
-use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class FrontendController extends Controller
 {
@@ -35,10 +36,13 @@ class FrontendController extends Controller
         return view('frontend.pages.login');
     }
     public function products(){
-        return view('frontend.pages.products.product');
+        $products = Product::all();
+       
+        return view('frontend.pages.products.product',compact('products'));
     }
     public function product_detail(){
-        return view('frontend.pages.products.product_detail');
+        $products = Product::all();
+        return view('frontend.pages.products.product_detail',compact('products'));
     }
 
 

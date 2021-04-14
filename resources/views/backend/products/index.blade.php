@@ -82,7 +82,7 @@
                                         {{ $product->unit }}
                                     </td>
                                     <td>
-                                       <img height="50px" src="{{asset('public\products/'. $product->image)}}"/>
+                                       <img height="50px" src="{{asset('products/'. $product->image)}}"/>
                                     </td>
 
                                     <td>

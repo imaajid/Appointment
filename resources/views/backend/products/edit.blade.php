@@ -17,38 +17,39 @@
             <div class="card">
                 <div class="card-body">
                     <h6 class="card-title">Product Form</h6>
+                   
                     <form class="forms-sample" method="POST" action="{{ route('products.update', $products->id) }}" enctype="multipart/form-data">
                         @method('PATCH')
                         @csrf
                        
                         <div class="form-group">
-                            <label for="category_name">title</label>
-                            <input type="text" class="form-control" id="name" autocomplete="off" placeholder="Name" name="title" value="{{ $products->title }}">
+                            <label for="title">title</label>
+                            <input type="text" class="form-control" id="title" autocomplete="off" placeholder="Name"  value="{{ $products->title }}" name="title" />
                         </div>
                         <div class="form-group">
-                            <label for="charges">name</label>
-                            <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="charges" value="{{ $products->name }}">
+                            <label for="name">name</label>
+                            <input type="text" class="form-control" id="name" autocomplete="off" placeholder="name"  value="{{ $products->name }}" name="name" />
                         </div>
                         <div class="form-group">
-                            <label for="charges">price</label>
-                            <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="price" value="{{ $products->price }}">
+                            <label for="price">price</label>
+                            <input type="number" class="form-control" id="price" autocomplete="off" placeholder="charges"  value="{{ $products->price }}" name="price" />
                         </div>
                         <div class="form-group">
-                            <label for="charges">quantity</label>
-                            <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="quantity" value="{{ $products->quantity }}">
+                            <label for="quantity">quantity</label>
+                            <input type="number" class="form-control" id="quantity" autocomplete="off" placeholder="charges"  value="{{ $products->quantity }}" name="quantity" />
                         </div>
                         <div class="form-group">
-                            <label for="charges">unit</label>
-                            <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="unit" value="{{ $products->unit }}">
+                            <label for="unit">unit</label>
+                            <input type="text" class="form-control" id="unit" autocomplete="off" placeholder="charges"  value="{{ $products->unit }}" name="unit" />
                         </div>
                         <div class="form-group">
-                            <label for="charges">image Preview</label>
+                            <label for="">image Preview</label>
                             <br/>
-                            <img height="60px" src=" {{asset('public\products/'. $products->image)}}"/>
+                            <img height="60px" src=" {{asset('products/'. $products->image)}}"/>
                         </div>
                         <div class="form-group">
-                            <label for="charges">image</label>
-                            <input type="number" class="form-control" id="charges" autocomplete="off" placeholder="charges" name="image" value="{{ $products->image }}">
+                            <label for="image">image</label>
+                            <input type="file" class="form-control" id="image" autocomplete="off" placeholder="charges"  value="{{ $products->image }}" name="image">
                         </div>
                        
                        

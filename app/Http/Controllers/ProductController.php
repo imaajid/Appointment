@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
-
+use App\Http\Requests\ProductRequest;
 use Illuminate\Support\Facades\File;
 use Intervention\Image\ImageManagerStatic as Image;
 
@@ -51,65 +51,25 @@ class ProductController extends Controller
     {
         request()->validate([
             'title'=> 'required|max:30',
-           
-            'price'=> 'required|regex:/^\d+(\.\d{1,2})?$/',
+             'price'=> 'required|regex:/^\d+(\.\d{1,2})?$/',
              'name' => 'required',
              'quantity' => 'required',
              'unit' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
        ]);
 
-
-       if ($file = $request->file('image')) {
-
-        $name = time() . $file->getClientOriginalName();
-        $file->move('public\products', $name);
-        $file_name = 'image_' . time() . '.png';
-        $input['image'] = $file_name;
-    }
-    //    if ($file = $request->file('image')) {
-            
-    //     $name = time() . $file->getClientOriginalName();
-
-    //     $image_resize = Image::make($file->getRealPath());              
-    //     $image_resize->resize(500, 500);
-    //     $image_resize->save(public_path('images/' .$name));
-    //     // $file->move('public\business_product', $name);
-    //     $input['image'] = $name;
-    // }
-
+       $input = $request->all();    
      
-    //    if ($files = $request->file('image')) {
-    //        $destinationPath = 'public/image/'; // upload path
-    //         $extension = date('YmdHis') . "." . $files->getClientOriginalExtension();
-    //        $files->move($destinationPath, $extension);
-    //        $input['image'] = $extension;
-    //     }
-
-        $input = $request->all();
-    
-        Product::create($input);
+       if ($files = $request->file('image')) {
+        $destinationPath = 'products/'; // upload path
+        $extension = date('YmdHis') . "." . $files->getClientOriginalExtension();
+        $files->move($destinationPath, $extension);
+        $input['image'] = "$extension";
+    }
+         Product::create($input);
 
         return redirect()->route('products.index')->with('success', 'products is successfully saved');
-
-
-
-
-
-
-
-        // $image = $request->file('image');
-        // dd($image);
-        //       dd(($files = $request->file('image')));
-        //       if ($files = $request->file('image')) {
-        //         $destinationPath = 'public/image/'; // upload path
-        //         $image = date('YmdHis') . "." . $files->getClientOriginalExtension();
-        //         $files->move($destinationPath, $image);
-        //         $input['image'] = "$image";
-        //      }
-              
-      
-    }
+  }
 
     /**
      * Display the specified resource.
@@ -132,7 +92,7 @@ class ProductController extends Controller
     {
         try {
             $products = Product::findOrFail($id);
-           
+            
             return view('backend.products.edit', compact('products'));
         } catch (\Exception $e) {
             return $e->getMessage();
@@ -146,30 +106,23 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Product $products ,Request $request)
+    public function update(ProductRequest $request, Product $product)
     {
-        try {
 
-          if ($file = $request->file('image')) {
-           
-            $name = time() . $file->getClientOriginalName();
-    
-            $image_resize = Image::make($file->getRealPath());              
-            $image_resize->resize(500, 500);
-            $image_resize->save(public_path('images/' .$name));
-            // $file->move('public\business_product', $name);
-            $input['image'] = $name;
-        }
+       
      
-            dd($products);
-            $input = $request->all();
-            
-            $products->update($input);  
+        $input = $request->all();    
+     
+        if ($files = $request->file('image')) {
+         $destinationPath = 'products/'; // upload path
+         $extension = date('YmdHis') . "." . $files->getClientOriginalExtension();
+         $files->move($destinationPath, $extension);
+         $input['image'] = "$extension";
+     }
+        $product->update($input);  
             
             return redirect()->route('products.index')->with('success', 'products successfully');
-        } catch (\Exception $e) {
-            return $e->getMessage();
-        }
+       
     }
 
     /**

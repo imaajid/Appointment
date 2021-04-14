@@ -25,7 +25,7 @@
                     </div>
                     <div class="form-group">
                         <label for="charges">name</label>
-                        <input type="number" class="form-control" id="name" autocomplete="off"  name="name">
+                        <input type="text" class="form-control" id="name" autocomplete="off"  name="name">
                     </div>
                     <div class="form-group">
                         <label for="price">price</label>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="form-group">
                         <label for="unit">unit</label>
-                        <input type="number" class="form-control" id="unit" autocomplete="off"  name="unit">
+                        <input type="text" class="form-control" id="unit" autocomplete="off"  name="unit">
                     </div>
                     <div class="form-group">
                         <label for="image">image</label>

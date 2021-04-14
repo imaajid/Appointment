@@ -51,7 +51,7 @@
                     <a href="{{asset('blog')}}" class="sub-menu-item">Blog</a>
                 </li>
                 <li>
-                    <a href="{{asset('products')}}" class="sub-menu-item">products</a>
+                    <a href="{{asset('frontend_products')}}" class="sub-menu-item">products</a>
                 </li>
                 <li>
                     <a href="{{asset('faq')}}" class="sub-menu-item">FAQ</a>

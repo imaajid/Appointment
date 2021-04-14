@@ -6,8 +6,8 @@
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('services.index') }}">Permissions</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Edit Permission</li>
+                <li class="breadcrumb-item"><a href="{{ route('services.index') }}">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Edit Services</li>
             </ol>
         </nav>
     </div>
@@ -16,7 +16,7 @@
         <div class="col-md-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h6 class="card-title">Permission Form</h6>
+                    <h6 class="card-title">Services Form</h6>
                     <form class="forms-sample" method="POST" action="{{ route('services.update', $services->id) }}" enctype="multipart/form-data">
                         @method('PATCH')
                         @csrf

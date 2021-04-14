@@ -25,7 +25,7 @@ Route::get('/projects', 'Frontend\FrontendController@projects')->name('projects'
 Route::get('/faq', 'Frontend\FrontendController@faq')->name('faq');
 Route::get('/hair_loss', 'Frontend\FrontendController@hair_loss')->name('hair_loss');
 Route::get('/premature_ejaculation', 'Frontend\FrontendController@premature_ejaculation')->name('premature_ejaculation');
-Route::get('/products', 'Frontend\FrontendController@products')->name('products');
+Route::get('/frontend_products', 'Frontend\FrontendController@products')->name('frontend_products');
 Route::get('/product_detail', 'Frontend\FrontendController@product_detail')->name('product_detail');
 
 Route::get('/erectile_dysfunction', 'Frontend\FrontendController@erectile_dysfunction')->name('erectile_dysfunction');
