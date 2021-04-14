@@ -40,9 +40,10 @@ class FrontendController extends Controller
        
         return view('frontend.pages.products.product',compact('products'));
     }
-    public function product_detail(){
-        $products = Product::all();
-        return view('frontend.pages.products.product_detail',compact('products'));
+    public function products_list(){
+       
+      
+        return view('frontend.pages.products.product_detail');
     }
 
 

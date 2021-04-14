@@ -153,6 +153,7 @@
                     </div><!--end col-->
                 </div><!--end row-->
                 @foreach($products as $key => $product)
+                {{-- {{dd($product)}} --}}
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
                       
@@ -162,7 +163,9 @@
                             </ul>
                            
                             <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                <a href="{{asset('product_detail')}}"><img src="{{asset('products/'. $product->image)}}" class="img-fluid" alt=""></a>
+                               
+                                <a href="{{asset('product_detail')}}">
+                                    <img src="{{asset('products/'. $product->image)}}" class="img-fluid" alt=""></a>
                                 <a href="{{asset('product_detail')}}" class="overlay-work">
                                    
                                   
