@@ -6,11 +6,11 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12 text-center">
                     <div class="page-next-level">
-                        <h4 class="title"> Branded T-Shirts </h4>
+                        <h4 class="title"> {{$products->name}}</h4> </h4>
                         <div class="page-next">
                             <nav aria-label="breadcrumb" class="d-inline-block">
                                 <ul class="breadcrumb bg-white rounded shadow mb-0">
-                                    <li class="breadcrumb-item"><a href="index.html">Landrick</a></li>
+                                    <li class="breadcrumb-item"><a href="index.html">Appointment</a></li>
                                     <li class="breadcrumb-item"><a href="index-shop.html">Shop</a></li>
                                     <li class="breadcrumb-item active" aria-current="page">Product Details</li>
                                 </ul>
@@ -26,18 +26,18 @@
             <div class="row align-items-center">
                 <div class="col-md-5">
                     <div class="tns-outer" id="tns1-ow"><div class="tns-liveregion tns-visually-hidden" aria-live="polite" aria-atomic="true">slide <span class="current">1</span>  of 5</div><div id="tns1-mw" class="tns-ovh"><div class="tns-inner" id="tns1-iw"><div class="tiny-single-item  tns-slider tns-carousel tns-subpixel tns-calc tns-horizontal" id="tns1" style="transform: translate3d(0%, 0px, 0px);">
-                        <div class="tiny-slide tns-item tns-slide-active" id="tns1-item0"><img src="{{('frontend/images/shop/product/single-2.jpg')}}" class="img-fluid rounded" alt=""></div>
-                        <div class="tiny-slide tns-item" id="tns1-item1" aria-hidden="true" tabindex="-1"><img src="{{('frontend/images/shop/product/single-3.jpg')}}" class="img-fluid rounded" alt=""></div>
-                        <div class="tiny-slide tns-item" id="tns1-item2" aria-hidden="true" tabindex="-1"><img src="{{('frontend/images/shop/product/single-4.jpg')}}" class="img-fluid rounded" alt=""></div>
-                        <div class="tiny-slide tns-item" id="tns1-item3" aria-hidden="true" tabindex="-1"><img src="{{('frontend/images/shop/product/single-5.jpg')}}" class="img-fluid rounded" alt=""></div>
-                        <div class="tiny-slide tns-item" id="tns1-item4" aria-hidden="true" tabindex="-1"><img src="{{('frontend/images/shop/product/single-6.jpg')}}" class="img-fluid rounded" alt=""></div>
+                        <div class="tiny-slide tns-item tns-slide-active" id="tns1-item0"><img src="{{asset('products/'. $products->image)}}" class="img-fluid rounded" alt=""></div>
+                        <div class="tiny-slide tns-item" id="tns1-item1" aria-hidden="true" tabindex="-1"><img src="{{asset('products/'. $products->image)}}" class="img-fluid rounded" alt=""></div>
+                        <div class="tiny-slide tns-item" id="tns1-item2" aria-hidden="true" tabindex="-1"><img src="{{asset('products/'. $products->image)}}" class="img-fluid rounded" alt=""></div>
+                        <div class="tiny-slide tns-item" id="tns1-item3" aria-hidden="true" tabindex="-1"><img src="{{asset('products/'. $products->image)}}" class="img-fluid rounded" alt=""></div>
+                        <div class="tiny-slide tns-item" id="tns1-item4" aria-hidden="true" tabindex="-1"><img src="{{asset('products/'. $products->image)}}" class="img-fluid rounded" alt=""></div>
                     </div></div></div><div class="tns-nav" aria-label="Carousel Pagination"><button type="button" data-nav="0" aria-controls="tns1" style="" aria-label="Carousel Page 1 (Current Slide)" class="tns-nav-active"></button><button type="button" data-nav="1" aria-controls="tns1" style="" aria-label="Carousel Page 2" class="" tabindex="-1"></button><button type="button" data-nav="2" aria-controls="tns1" style="" aria-label="Carousel Page 3" class="" tabindex="-1"></button><button type="button" data-nav="3" aria-controls="tns1" style="" aria-label="Carousel Page 4" class="" tabindex="-1"></button><button type="button" data-nav="4" aria-controls="tns1" style="" aria-label="Carousel Page 5" class="" tabindex="-1"></button></div></div>
                 </div><!--end col-->
 
                 <div class="col-md-7 mt-4 mt-sm-0 pt-2 pt-sm-0">
                     <div class="section-title ms-md-4">
-                        <h4 class="title">Branded T-Shirts</h4>
-                        <h5 class="text-muted">$21.00 <del class="text-danger ms-2">$25.00</del> </h5>
+                        <h4 class="title">{{$products->name}}</h4>
+                        <h5 class="text-muted">{{$products->price}} <del class="text-danger ms-2">{{$products->price}}</del> </h5>
                         <ul class="list-unstyled text-warning h5 mb-0">
                             <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
                             <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
@@ -82,7 +82,7 @@
 
                         <div class="mt-4 pt-2">
                             <a href="javascript:void(0)" class="btn btn-primary">Shop Now</a>
-                            <a href="shop-cart.html" class="btn btn-soft-primary ms-2">Add to Cart</a>
+                            <a href="{{asset('cart')}}" class="btn btn-soft-primary ms-2">Add to Cart</a>
                         </div>
                     </div>
                 </div><!--end col-->

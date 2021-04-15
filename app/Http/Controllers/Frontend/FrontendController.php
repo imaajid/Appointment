@@ -40,10 +40,17 @@ class FrontendController extends Controller
        
         return view('frontend.pages.products.product',compact('products'));
     }
-    public function products_list(){
-       
+    public function products_list($id){
+        $products = Product::findOrFail($id);
+      return view('frontend.pages.products.product_detail',compact('products'));
+    }
+    public function cart(){
       
-        return view('frontend.pages.products.product_detail');
+        return view('frontend.pages.products.cart');
+    }
+      public function checkout(){
+      
+        return view('frontend.pages.products.checkout');
     }
 
 

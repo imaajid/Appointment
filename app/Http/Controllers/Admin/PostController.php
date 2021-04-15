@@ -1,17 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Models\Product;
+use App\Models\Post;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\File;
-use App\Http\Requests\ProductRequest;
-use Intervention\Image\ImageManagerStatic as Image;
+use App\Http\Requests\PostRequest;
+use App\Http\Controllers\Controller;
 
 
-
-class ProductController extends Controller
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -21,8 +18,9 @@ class ProductController extends Controller
     public function index()
     {
         try {
-            $products = Product::all();
-            return view('backend.products.index',compact('products'));
+            
+            $posts = Post::all(); 
+            return view('backend.posts.index', compact('posts'));
         } catch (\Exception $e) {
             return $e->getMessage();
         }
@@ -36,7 +34,7 @@ class ProductController extends Controller
     public function create()
     {
         try {
-            return view('backend.products.create');
+            return view('backend.posts.create');
         } catch (\Exception $e) {
             return $e->getMessage();
         } 
@@ -52,25 +50,22 @@ class ProductController extends Controller
     {
         request()->validate([
             'title'=> 'required|max:30',
-             'price'=> 'required|regex:/^\d+(\.\d{1,2})?$/',
-             'name' => 'required',
-             'quantity' => 'required',
-             'unit' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'description' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,jpe,gif,svg|max:2048',
        ]);
-
        $input = $request->all();    
      
        if ($files = $request->file('image')) {
-        $destinationPath = 'products/'; // upload path
+        $destinationPath = 'posts/'; // upload path
         $extension = date('YmdHis') . "." . $files->getClientOriginalExtension();
         $files->move($destinationPath, $extension);
         $input['image'] = "$extension";
     }
-         Product::create($input);
+         Post::create($input);
 
-        return redirect()->route('products.index')->with('success', 'products is successfully saved');
-  }
+        return redirect()->route('posts.index')->with('success', 'posts is successfully saved');
+
+    }
 
     /**
      * Display the specified resource.
@@ -92,9 +87,9 @@ class ProductController extends Controller
     public function edit($id)
     {
         try {
-            $products = Product::findOrFail($id);
+            $posts = Post::findOrFail($id);
             
-            return view('backend.products.edit', compact('products'));
+            return view('backend.posts.edit', compact('posts'));
         } catch (\Exception $e) {
             return $e->getMessage();
         } 
@@ -107,23 +102,19 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(ProductRequest $request, Product $product)
+    public function update(PostRequest $request, Post $post)
     {
-
-       
-     
         $input = $request->all();    
      
         if ($files = $request->file('image')) {
-         $destinationPath = 'products/'; // upload path
+         $destinationPath = 'posts/'; // upload path
          $extension = date('YmdHis') . "." . $files->getClientOriginalExtension();
          $files->move($destinationPath, $extension);
          $input['image'] = "$extension";
      }
-        $product->update($input);  
+        $post->update($input);  
             
-            return redirect()->route('products.index')->with('success', 'products successfully');
-       
+            return redirect()->route('posts.index')->with('success', 'posts successfully');
     }
 
     /**
@@ -136,11 +127,10 @@ class ProductController extends Controller
     {
         try {
          
-            Product::find($id)->delete();
-            return redirect()->route('products.index')->with('success', 'products deleted successfully');
+            Post::find($id)->delete();
+            return redirect()->route('posts.index')->with('success', 'posts deleted successfully');
         } catch (\Exception $e) {
             return $e->getMessage();
         }
     }
-   
 }

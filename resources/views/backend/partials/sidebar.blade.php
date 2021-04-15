@@ -32,6 +32,12 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a href="{{ url('/admin/posts') }}" class="nav-link">
+                    <i class="link-icon" data-feather="users"></i>
+                    <span class="link-title">Post</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a href="{{ url('/admin/doctor_details') }}" class="nav-link">
                     <i class="link-icon" data-feather="heart"></i>
                     <span class="link-title">Doctors</span>

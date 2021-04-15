@@ -161,12 +161,13 @@
                             <ul class="label list-unstyled mb-0">
                                 <li><a href="javascript:void(0)" class="badge badge-link rounded-pill bg-success">Featured</a></li>
                             </ul>
-                           
+                      
                             <div class="shop-image position-relative overflow-hidden rounded shadow">
-                               
-                                <a href="{{asset('product_detail')}}">
-                                    <img src="{{asset('products/'. $product->image)}}" class="img-fluid" alt=""></a>
-                                <a href="{{asset('product_detail')}}" class="overlay-work">
+                             
+                                <a href="{{url('product_detail') . '/' . $product->id}}">
+
+                                    <img src="{{asset('products/'. $product->image)}}" class="img-fluid" alt=""/></a>
+                                <a href="{{url('product_detail') . '/' . $product->id}}" class="overlay-work">
                                    
                                   
                                   
@@ -196,60 +197,9 @@
                     </div><!--end col-->
                   
                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card shop-list border-0 position-relative">
-                            <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                <a href="{{asset('product_detail')}}"><img src="{{asset('products/'. $product->image)}}" class="img-fluid" alt=""></a>
-                                <div class="overlay-work">
-                                    <div class="py-2 bg-soft-dark rounded-bottom out-stock">
-                                        <h6 class="mb-0 text-center">Out of stock</h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body content pt-4 p-2">
-                                <a href="{{asset('product_detail')}}" class="text-dark product-name h6">Shopping Bag</a>
-                                <div class="d-flex justify-content-between mt-1">
-                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$21.00 <del class="text-danger ms-2">$25.00</del> </h6>
-                                    <ul class="list-unstyled text-warning mb-0">
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
+                   <!--end col-->
                    
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <div class="card shop-list border-0 position-relative">
-                            <div class="shop-image position-relative overflow-hidden rounded shadow">
-                                <a href="{{asset('product_detail')}}"><img src="{{asset('products/'. $product->image)}}" class="img-fluid" alt=""></a>
-                                <a href="{{asset('product_detail')}}" class="overlay-work">
-                                    <img src="" class="img-fluid" alt="">
-                                </a>
-                                <ul class="list-unstyled shop-icons">
-                                    <li><a href="javascript:void(0)" class="btn btn-icon btn-pills btn-soft-danger"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icons"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></a></li>
-                                    <li class="mt-2"><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#productview" class="btn btn-icon btn-pills btn-soft-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye icons"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg></a></li>
-                                    <li class="mt-2"><a href="shop-cart.html" class="btn btn-icon btn-pills btn-soft-warning"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart icons"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></a></li>
-                                </ul>
-                            </div>
-                            <div class="card-body content pt-4 p-2">
-                                <a href="{{asset('product_detail')}}" class="text-dark product-name h6">Elegent Watch</a>
-                                <div class="d-flex justify-content-between mt-1">
-                                    <h6 class="text-muted small fst-italic mb-0 mt-1">$5.00 <span class="text-success ms-1">30% off</span> </h6>
-                                    <ul class="list-unstyled text-warning mb-0">
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                        <li class="list-inline-item"><i class="mdi mdi-star"></i></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--end col-->
+                   <!--end col-->
                     @endforeach
               <!--end col--> 
                     <!-- PAGINATION END -->

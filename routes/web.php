@@ -26,8 +26,10 @@ Route::get('/faq', 'Frontend\FrontendController@faq')->name('faq');
 Route::get('/hair_loss', 'Frontend\FrontendController@hair_loss')->name('hair_loss');
 Route::get('/premature_ejaculation', 'Frontend\FrontendController@premature_ejaculation')->name('premature_ejaculation');
 Route::get('/frontend_products', 'Frontend\FrontendController@products')->name('frontend_products');
-Route::get('/product_detail', 'Frontend\FrontendController@products_list')->name('product_detail');
+Route::get('/product_detail/{id}', 'Frontend\FrontendController@products_list');
 
+Route::get('/cart', 'Frontend\FrontendController@cart')->name('cart');
+Route::get('/checkout', 'Frontend\FrontendController@checkout')->name('checkout');
 Route::get('/erectile_dysfunction', 'Frontend\FrontendController@erectile_dysfunction')->name('erectile_dysfunction');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
@@ -46,5 +48,7 @@ Route::prefix('admin')->group(function () {
         Route::resource('specializations', 'Admin\SpecializationController');
         Route::resource('doctor_details', 'Admin\DoctorDetailController');
         Route::resource('products', 'ProductController');
+        Route::resource('posts', 'Admin\PostController');
+       
     });
 });
