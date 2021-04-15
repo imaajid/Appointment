@@ -17,8 +17,9 @@ class CreateServicesTable extends Migration
             $table->id();
             $table->string('name');
             $table->integer('charges');
-            $table->unsignedBigInteger('service_category_id')->nullable();
+            $table->unsignedBigInteger('service_category_id');
             $table->string('status')->nullable();
+            $table->string('image');
             $table->timestamps();
         });
     }

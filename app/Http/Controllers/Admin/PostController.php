@@ -6,6 +6,7 @@ use App\Models\Post;
 use Illuminate\Http\Request;
 use App\Http\Requests\PostRequest;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 
 class PostController extends Controller
@@ -53,6 +54,7 @@ class PostController extends Controller
             'description' => 'required',
             'image' => 'required|image|mimes:jpeg,png,jpg,jpe,gif,svg|max:2048',
        ]);
+      
        $input = $request->all();    
      
        if ($files = $request->file('image')) {
@@ -61,6 +63,7 @@ class PostController extends Controller
         $files->move($destinationPath, $extension);
         $input['image'] = "$extension";
     }
+        $input['user_id'] = Auth::user()->id;
          Post::create($input);
 
         return redirect()->route('posts.index')->with('success', 'posts is successfully saved');

@@ -50,18 +50,25 @@ class ServiceController extends Controller
      */
     public function store(ServiceRequest $request)
     {
-        try {
-            Service::create([
-                'name' => $request->name,
-                'charges' =>$request->charges,
-                'status' =>$request->status,
-                'service_category_id' =>$request->service_category_id,
-
-            ]);
+        request()->validate([
+            
+             'name' => 'required',
+             'charges' => 'required',
+             'status' => 'required',
+             'service_category_id' => 'required',
+             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+       ]);
+       $input = $request->all();    
+     
+       if ($files = $request->file('image')) {
+        $destinationPath = 'services/'; // upload path
+        $extension = date('YmdHis') . "." . $files->getClientOriginalExtension();
+        $files->move($destinationPath, $extension);
+        $input['image'] = "$extension";
+    }
+         Service::create($input);
             return redirect()->route('services.index')->with('success', 'services is successfully saved');
-        } catch (\Exception $e) {
-            return $e->getMessage();
-        }
+       
     }
 
     /**
@@ -101,13 +108,17 @@ class ServiceController extends Controller
      */
     public function update(ServiceRequest $request, Service $service)
     {
-        try {
-            $input = $request->all();
+        $input = $request->all();    
+     
+        if ($files = $request->file('image')) {
+         $destinationPath = 'services/'; // upload path
+         $extension = date('YmdHis') . "." . $files->getClientOriginalExtension();
+         $files->move($destinationPath, $extension);
+         $input['image'] = "$extension";
+     }
             $service->update($input);
             return redirect()->route('services.index')->with('success', 'services updated successfully');
-        } catch (\Exception $e) {
-            return $e->getMessage();
-        }
+       
     }
 
     /**

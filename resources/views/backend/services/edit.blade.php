@@ -46,6 +46,15 @@
                                 @endforeach
                               </select>
                         </div>
+                        <div class="form-group">
+                            <label for="">image Preview</label>
+                            <br/>
+                            <img height="60px" src=" {{asset('services/'. $services->image)}}"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="image">image</label>
+                            <input type="file" class="form-control" id="image" autocomplete="off" placeholder="charges"  value="{{ $services->image }}" name="image">
+                        </div>
                        
                        <button type="submit" class="btn btn-primary mr-2">Submit</button>
                         <a href="{{ route('services.index') }}" class="btn btn-light">Cancel</a>

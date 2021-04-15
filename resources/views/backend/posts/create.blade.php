@@ -19,6 +19,7 @@
                 <h6 class="card-title">Post Form</h6>
                 <form class="forms-sample" method="POST" action="{{ route('posts.store') }}" enctype="multipart/form-data">
                     @csrf
+                   
                     <div class="form-group">
                         <label for="title">title</label>
                         <input type="text" class="form-control" id="title" autocomplete="off" name="title">

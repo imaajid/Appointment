@@ -27,7 +27,7 @@ Route::get('/hair_loss', 'Frontend\FrontendController@hair_loss')->name('hair_lo
 Route::get('/premature_ejaculation', 'Frontend\FrontendController@premature_ejaculation')->name('premature_ejaculation');
 Route::get('/frontend_products', 'Frontend\FrontendController@products')->name('frontend_products');
 Route::get('/product_detail/{id}', 'Frontend\FrontendController@products_list');
-
+Route::get('/our_services', 'Frontend\FrontendController@our_services')->name('our_services');
 Route::get('/cart', 'Frontend\FrontendController@cart')->name('cart');
 Route::get('/checkout', 'Frontend\FrontendController@checkout')->name('checkout');
 Route::get('/erectile_dysfunction', 'Frontend\FrontendController@erectile_dysfunction')->name('erectile_dysfunction');

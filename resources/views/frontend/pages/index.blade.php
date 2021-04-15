@@ -11,7 +11,7 @@
                         <p class="para-desc text-muted mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap v5 html page.</p>
                         
                         <div class="mt-3">
-                            <a href="javascript:void(0)" class="btn btn-primary me-2 mt-2">Find Doctors</a>
+                            <a href="{{asset('our_services')}}" class="btn btn-primary me-2 mt-2">Find Doctors</a>
                             <a href="javascript:void(0)" class="btn btn-soft-primary mt-2">Book an Appointment</a>
                         </div>
 

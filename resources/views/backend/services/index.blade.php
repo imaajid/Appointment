@@ -44,6 +44,9 @@
                                     status
                                 </th>
                                 <th>
+                                    image
+                                </th>
+                                <th>
                                     Created At
                                 </th>
                                 <th>
@@ -72,6 +75,9 @@
                                     <td>
                                         {{ $service->status }}
                                     </td>
+                                    <td>
+                                        <img height="50px" src="{{asset('services/'. $service->image)}}"/>
+                                     </td>
 
                                     <td>
                                         {{ \Carbon\Carbon::parse($service->created_at)->diffForhumans() }}

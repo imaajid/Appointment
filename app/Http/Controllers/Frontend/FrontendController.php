@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Models\Post;
 use App\Models\Product;
+use App\Models\Service;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class FrontendController extends Controller
 {
@@ -15,7 +18,10 @@ class FrontendController extends Controller
         return view('frontend.pages.about');
     }
     public function blog(){
-        return view('frontend.pages.blog');
+      
+        $posts = Post::all();
+        
+        return view('frontend.pages.blog', compact('posts'));
     }
     public function projects(){
         return view('frontend.pages.out_projects');
@@ -52,6 +58,9 @@ class FrontendController extends Controller
       
         return view('frontend.pages.products.checkout');
     }
-
+    public function our_services(){
+        $services = Service:: all();
+        return view('frontend.pages.our_services', compact('services'));
+    }
 
 }

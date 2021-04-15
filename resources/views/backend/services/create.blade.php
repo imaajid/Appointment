@@ -17,7 +17,7 @@
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">category Form</h6>
-                <form class="forms-sample" method="POST" action="{{ route('services.store') }}">
+                <form class="forms-sample" method="POST" action="{{ route('services.store') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
                         <label for="category_name">Service Name</label>
@@ -43,6 +43,10 @@
                             <option value="{{$service_category->id}}">{{$service_category->name}}</option>
                             @endforeach
                           </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="image">image</label>
+                        <input type="file" class="form-control" id="image" autocomplete="off"  name="image">
                     </div>
                     <button type="submit" class="btn btn-primary mr-2">Submit</button>
                     <a href="{{ route('services.index') }}" class="btn btn-light">Cancel</a>
