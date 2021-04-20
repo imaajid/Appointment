@@ -24,8 +24,8 @@
         <!-- Loader -->
 
         <!-- Navbar STart -->
+        @include('frontend.partials.frontend_header')
         
-       
         <!--end header-->
         <!-- Navbar End -->
 

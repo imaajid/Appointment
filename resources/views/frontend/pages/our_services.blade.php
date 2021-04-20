@@ -5,11 +5,12 @@
     <div class="container">
 
      <div class="row">
+      
      @foreach ($services as $service)
        
-   
-       <div class="col-md-3">
-        <img src="{{asset('services/'. $service->image)}}" class="img-fluid"  alt=""/>
+      
+       <div class="col-md-4">
+        <a href="{{asset('appointment_work')}}"><img src="{{asset('services/'. $service->image)}}" class="img-fluid"  alt=""/></a>
        </div>
        @endforeach
      </div>

@@ -62,5 +62,22 @@ class FrontendController extends Controller
         $services = Service:: all();
         return view('frontend.pages.our_services', compact('services'));
     }
-
+    public function appointment_work(){
+        return view('frontend.pages.appointment_work');
+    }
+    public function first_name(){
+        return view('frontend.pages.first_name');
+    }
+    public function email_address(){
+        return view('frontend.pages.email_address');
+    }
+    public function audrey(){
+        return view('frontend.pages.audrey');
+    }
+    public function after_login(){
+        return view('frontend.pages.after_login');
+    }
+    public function gender(){
+        return view('frontend.pages.gender');
+    }
 }

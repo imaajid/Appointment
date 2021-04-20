@@ -101,7 +101,7 @@
                                     <input type="text" name="phone" id="phone" class="form-control" placeholder="State Name :">
                                 </div>
                             </div><!--end col-->
-                            <div class="col-12">
+                            <div class="col-12"ima>
                                 <div class="mb-3">
                                     <label class="form-label">Your Email <span class="text-danger">*</span></label>
                                     <input name="email" id="email" type="email" class="form-control" placeholder="Your email :">

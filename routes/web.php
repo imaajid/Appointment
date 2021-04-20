@@ -32,7 +32,12 @@ Route::get('/cart', 'Frontend\FrontendController@cart')->name('cart');
 Route::get('/checkout', 'Frontend\FrontendController@checkout')->name('checkout');
 Route::get('/erectile_dysfunction', 'Frontend\FrontendController@erectile_dysfunction')->name('erectile_dysfunction');
 Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
-
+Route::get('/appointment_work', 'Frontend\FrontendController@appointment_work')->name('appointment_work');
+Route::get('/first_name', 'Frontend\FrontendController@first_name')->name('first_name');
+Route::get('/email_address', 'Frontend\FrontendController@email_address')->name('email_address');
+Route::get('/audrey', 'Frontend\FrontendController@audrey')->name('audrey');
+Route::get('/after_login', 'Frontend\FrontendController@after_login')->name('after_login');
+Route::get('/gender', 'Frontend\FrontendController@gender')->name('gender');
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
